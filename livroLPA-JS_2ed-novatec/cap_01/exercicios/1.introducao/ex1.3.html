@@ -1,0 +1,11 @@
+<!--Elaborar um programa para uma loja, o qual leia o preço de um produto e informe
+as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista
+com 10% de desconto e o valor em 3x-->
+
+<script>
+    const produto = Number(prompt('Qual o valor do produto? (R$)'))
+    const descProduto = produto - (produto*0.10) //desconto de 10%
+    const div3Produto = produto / 3
+
+    alert(`Valor do produto: R$${produto.toFixed(2)}\nÀ vista R$${descProduto.toFixed(2)}\nDividido em 3x: R$${div3Produto.toFixed(2)}`)
+</script>

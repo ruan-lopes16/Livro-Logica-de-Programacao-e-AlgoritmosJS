@@ -1,0 +1,11 @@
+<!--Elaborar um programa que leia a duração de uma viagem em dias e horas.
+Calcule e informe a duração total da viagem em números de horas-->
+
+<meta charset="utf-8">
+<script>
+    const dia = Number(prompt(`N° DIAS:`)) //lê os dados
+    const hora = Number(prompt(`N° HORAS:`))
+
+    const totalH = (dia * 24) + hora //convertendo dia em hora, adicionando as horas para totalizar o tempo gasto na viagem
+    alert(`Foram gastos um total de ${totalH} horas na viagem`)
+</script>

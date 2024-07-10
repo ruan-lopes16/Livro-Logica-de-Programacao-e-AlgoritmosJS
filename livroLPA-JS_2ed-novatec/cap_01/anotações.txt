@@ -1,0 +1,73 @@
+CAPITULO 1 - INTRODUÇÃO
+
+LÓGICA DE PROGRAMAÇÃO
+-Busca entender por que pensamos de uma maneira e não de outra.
+-Organizar o pensamento e colocar as coisas em ordem são tarefas de lógica de que necessitamos para resolver problemas com  o uso do computador.
+-Compreender o que é pedido, assim, chegando à resposta desejada.
+-Enumerar as etapas a serem realizadas de forma que sejam executadas em uma lógica sequencial -> um comando(ação) após o outro.
+-Analisar OUTRAS possibilidades de solução para a mesma tarefa.
+-Analisar possibilidades -> SE isso acontecer, tal coisa acontecerá. SE NÃO outra coisa vai acontecer. *CONDIÇÕES ou REPETIÇÕES*
+*CONDIÇÕES
+determinar quais comandos serão executados a partir da análise de uma condição - SE condição verdadeira, o programa segue por um caminho. SE NÃO segue por outro.
+
+*REPETIÇÕES
+uma ação ou conjunto de ações devem ocorrer várias vezes. É preciso indicar quantas vezes a repetição vai ocorrer ou criar algum ponto de saída de laço.
+
+-INDENTAÇÃO DE CÓDIGO(recuo da margem à esquerda)
+serve para facilitar a compreensão do código
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Lógica de programação é associada à uma receita de bolo:
+-ingredientes -> dados de entrada;
+-ações -> processamento;
+-resultado(bolo) -> dados de saída.
+
+*esquecer alguma etapa ou informação fará com que o resultado não seja como esperado.*
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-etapa de instação...
+
+-COMO FUNCIONA ALERT E CONSOLE.LOG
+alert() -> exibir mensagens em uma caixa no navegador
+console.log() -> exibir mensagens no console do navegador
+
+*tomar cuidado com letras maiusculas e minusculas e não executar determinado código como esperado, pois JS sabe diferenciar - case sensitive*
+*métodos em JS são delimitados por <script></script>*
+-execução "exemplo_1.html"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VARIÁVEIS E CONSTANTES
+-As variáveis são espaços alocados na memória do computador que permitem guardar informações e trabalhar com elas - podem ser alteradas durante o sistema
+
+Ao declarar uma variável:
+-coloque nomes que indicam o conteúdo que a variável irá armazenar
+-NÃO podem:
+    -espaços;
+    -começar com números;
+    -caracteres especiais;
+    -utilizar palavras reservadas. Ex.:function, var, new, for ou return.
+-use o conceito de atribuição. "=". Ex.: const idade = 21
+
+-para declarar uma variável em JS - var, let ou const
+    *uma variável a partir desses comandos, cria um variável de escopo local(de bloco), que evita desperdício de memória - pois, ao final do bloco, a variável deixa de existir.
+
+-Em algumas linguagens o uso de CONSTANTES é restrito para declaração de variáveis de controle ou de configuração de sistema.
+
+-Em JS declarar uma variável com const serve para indicar que essa variável deve possuir UMA ÚNICA atribuição de valor e não será alterada no decorrer do programa.
+*ou seja, o que pode ser alterado, pode utilizar o let*
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ENTRADA DE DADOS COM PROMPT
+-Exibe uma caixa com um texto e um espaço para digitação para receber dados do usuário(estilo alert(), mas com campo para colocar os dados)
+-Pega o que foi digitado pelo usuário na caixa de diálogo do prompt e atribui à uma variável
+-execução "exemplo_2.html"
+
+*uso de ponto e vírgula ";" no final dos comandos em programas JS é opcional*
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMENTÁRIOS

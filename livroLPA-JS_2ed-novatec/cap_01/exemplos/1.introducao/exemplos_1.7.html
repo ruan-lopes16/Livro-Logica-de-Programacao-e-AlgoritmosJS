@@ -1,0 +1,15 @@
+<!--Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da tava do garçom(10%) e o valor total a ser pago-->
+
+<meta charset="utf-8">
+<script>
+    let jantar = Number(prompt('Digite o valor do jantar')) //lê valor do jantar
+    let taxaGar = jantar * 0.10 //calcula a % -> variaveis
+    let total = jantar + taxaGar 
+/*
+    alert(`
+    Valor do jantar: R$${jantar.toFixed(2)}
+    Taxa de serviço: R$${taxaGar.toFixed(2)}
+    Total: R$${total.toFixed(2)}`)
+*/ // usado para pular para a linha seguinte \n
+    alert(`Valor do jantar: R$${jantar.toFixed(2)}\nTaxa de serviço: R$${taxaGar.toFixed(2)}\nTotal: R$${total.toFixed(2)}`)
+</script>
