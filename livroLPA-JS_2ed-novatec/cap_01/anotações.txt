@@ -71,3 +71,41 @@ ENTRADA DE DADOS COM PROMPT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 COMENTÁRIOS
+Uma observação inserida pelo programador no código, com objetivo de explicar algum detalhe do programa
+
+// .js 
+/* */ .js - para mais de uma linha
+<!-- --> .html
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TIPOS DE DADOS
+-string - variáveis de texto
+-números
+-booleanos - true e false
+
++ pode ser usado para concatenar/juntar STRINGS
+ex.: 
+console.log('Ruan tem ' + idade + ' anos')
+
+MÉTODOS
+Number() - permite trabalhar com valores numéricos
+parseInt() - converte string em número inteiro
+parseFloat() - converte string em número decimal
+
+toString() - converte número em string
+
+*caso a variavel que contenha um número venha com aspas a mesma é um string, porém, é possível convertê-la por meio de algum método, caso necessário*
+
+prompt() -> cria variaveis do tipo String - exceto quando é especificado "Number(prompt(''))"
+variavel que não recebe atribuição, retorna undefined
+
+-para ver o tipo de dado inserido ou variavel console.log(typeof ______)
+
+-método para ver se um número é inteiro Number.isInteger()
+ex.: 
+console.log(Number.isInteger(12)) //retorna true
+console.log(Number.isInteger(5.7)) //retorna false
+
+.toFixed() -> determina quantas casas após a virgula/ponto //pode haver mais casa decimas basta trocar número entre ()
+\n -> pular/quebrar para a próxima linha
