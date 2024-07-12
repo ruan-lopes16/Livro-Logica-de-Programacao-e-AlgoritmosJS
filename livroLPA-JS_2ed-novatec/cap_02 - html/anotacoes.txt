@@ -1,0 +1,26 @@
+INTEGRAÇÃO COM HTML
+
+O navegador já possui um interpretador .js integrado
+São delimitados pelas tags <script></script> dentro de um arquivo .html
+
+Atalho para criar um layout HTML
+-ao criar arquivo .html, basta teclar "!" e aparecerá a estrutura base HTML
+
+-em <html lang=""> - colocar pt-br, ajuda melhor pronúncia do software de leitura de tela e indica ao navegador o dicionário q irá ser utilizado para fazer correções gramaticais em forms
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TAGS <head> e <body> *seções principais
+<title></title> texto que aparecerá na aba do navegador
+metatags
+<meta charset="utf-8"> - página de códigos do doc
+<meta name="viewport" ...> - ligado à responsividade de págine
+<meta http-equiv...> - compatibilidade entre navegadores
+
+<h1> - serve para destacar um conteúdo relevante
+<form> - campo para formulário - principal forma de interagir com o US para entrada de dados
+<input type="text"> - receber texto do US
+id="" - identificador para obter conteúdo do campo
+<input type="submit" ...> - enviar dados para um destino
+<p> e <h3> - criam linhas para exibir mensagens de resposta ao programa
+<script src=""> - vincular código .js que adicionar comportamento a página - em .html 
