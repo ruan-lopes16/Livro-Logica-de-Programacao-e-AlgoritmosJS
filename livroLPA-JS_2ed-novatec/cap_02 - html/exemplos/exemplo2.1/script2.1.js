@@ -8,5 +8,11 @@ const resp = document.querySelector("h3")  // seleciona o elemento <h3> no docum
 frm.addEventListener("submit",  (e) => { //'e' será gerado quando o evento 'submit' ocorrer/clicado
     const nome = frm.inNome.value //obtém o valor digitado no input de id=inNome no 'frm' que foi pego pelo id - linha3
     resp.innerText = `Olá, ${nome}!` //atualiza texto dentro de h3
-    e.preventDefault() //evita envio do form e desaparecimento do que foi digitado e mostrado na tela - atualizando a página
+    e.preventDefault() //evita envio do form e reload da pagina, perdendo o que foi digitado e mostrado na tela
 })
+
+/*
+linhas 3 e 9 - poderiam ser abreviadas. Acessando diretamente a propriedade que se quer obter
+
+const nome = document.querySelector("form").inNome.value 
+*/ 

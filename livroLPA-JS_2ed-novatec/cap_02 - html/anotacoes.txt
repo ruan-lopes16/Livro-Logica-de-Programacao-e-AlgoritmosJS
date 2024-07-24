@@ -24,3 +24,52 @@ id="" - identificador para obter conteúdo do campo
 <input type="submit" ...> - enviar dados para um destino
 <p> e <h3> - criam linhas para exibir mensagens de resposta ao programa
 <script src=""> - vincular código .js que adicionar comportamento a página - em .html 
+
+.preventDefault() - evita envio do form e desaparecimento do que foi digitado e mostrado na tela - atualizando a página
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+METÓDOS querySelector() E getElementById()
+
+-referencia um elemento HTML identificado no documento(paragrafo, form, botao etc)
+
+getElementById() - precisa ter o atributo id=""
+querySelector() - permite criar referencia por meio da tag name, id ou classe.
+Ex.: 
+const resp = document.querySelector("h3") - primeiro elemento h3 da página
+const cor = document.querySelector("#inCor") - elemento com o id="inCor"
+const lista = document.querySelector(".lista") - elemento da class="lista"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROPRIDADES innerText, innerHTML E value
+
+value - consulta ou altera o CONTEÚDO de campos de formulário
+innerText - consulta ou altera o TEXTO exibido por elementos HTML como paragrafos(p), cabeçalho(h1, h2...) ou containers(span, div)
+innerHTML - consulta ou altera o conteúdo de elementos HTML, como paragrafos(p), cabeçalho(h1, h2...) ou containers(span, div). Códigos presentes no conteúdo são renderizados pelo navegador
+
+preventDefault()
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+OPERADORES ARITMÉTICOS E FUNÇÕES MATEMÁTICAS
+
++ adição
+- subtração
+/ divisão
+** potenciação
+% módulo - resto de divisão
+
+JavaScript possui uma class Math para ter mais acesso à outros cálculos
+Math.abs(num) - retorna valor absoluto - caso negativo vira positivo
+Math.ceil(num) - arredonda o valor para cima
+Math.floor(num) - arredonda o valor para baixo
+Math.pow(base, exp) - retorna base elevado ao expoente
+Math.randon() - retorna um valor aleatório entre 0 e 1
+Math.round(num) - arredonda o valor para o número mais próximo
+Math.sqrt(num) - raiz quadrada de um número
+
+*funções matemáticas tem prioridade sob os operadores aritméticos
+*pode-se mudar a hierarquia(ordem de precedência) através de parenteses()
+*parenteses tbm podem ser utilizados para ajudar na compreensão do cálculo
+
+
