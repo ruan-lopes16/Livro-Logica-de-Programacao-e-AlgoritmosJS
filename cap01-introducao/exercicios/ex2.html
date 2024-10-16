@@ -1,0 +1,12 @@
+<!-- Elaborar um programa para uma pizzaria, o qual leia o valor de uma conta e quantos clientes vão pagá-la. 
+Calcule e informe o valor a ser pago por cliente. -->
+
+<meta charset="uft-8">
+<script>
+    let conta = Number(prompt('Valor a pagar (R$)'))
+    let qtdCliente = Number(prompt('Quantidade de clientes irão pagar a conta'))
+    let divConta = conta / qtdCliente
+
+    console.log(`Valor da conta: R$${conta.toFixed(2)}\nPagantes: ${qtdCliente}\nValor por cliente: R$${divConta.toFixed(2)}`)
+    alert(`Valor da conta: R$${conta.toFixed(2)}\nPagantes: ${qtdCliente}\nValor por cliente: R$${divConta.toFixed(2)}`)
+</script>
