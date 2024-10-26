@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/img4_2.jpg" type="image/x-icon">
+    <title>Peso Ideal</title>
+    <style> /* estilização do formulário*/
+        img{
+            float: left;
+            height: 300px;
+            width: 300px;
+            padding-right: 10px;
+        }
+
+        h1{
+            border-bottom-style: inset;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/img4_2.jpg" alt="balança"> <!-- colocando imagem na pagina -->
+    <h1>Programa Cálculo do Peso Ideal</h1>
+    <form>
+        <p>
+            Nome:
+            <input type="text" id="inNome" required>
+        </p>
+        <p>
+            Sexo:
+            <input type="radio" name="sexo" id="inMasc" required> Masculino <!-- "radio", marcação em bolinhas -->
+            <input type="radio" name="sexo" id="inFem" required> Feminino
+        </p>
+        <p>
+            Altura:
+            <input type="number" min="0" step="0.01" id="inAltura" required>
+        </p>
+        <input type="submit" value="Calcular Peso Ideal">
+        <input type="reset" value="Limpar Campos"> <!-- botão para resetar a pagina -->
+    </form>
+    <h3 id="outResp"></h3>
+    <script src="ex4_2.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4_3</title>
+</head>
+<body>
+    
+<script>
+    const bairro = prompt("Bairro de entrega: "); // pegando o bairro
+
+    let taxa; // declarando variavel para usá-la no futuro
+
+    switch(bairro){ // cases
+        case "Centro":
+            taxaEntrega = 5.00;
+        break;
+        
+        case "Fragata": // se for duas ou mais com a mesma condição basta colocar uma após a outra e na ultima colocar os comando e break
+        case "Três Vendas":
+            taxaEntrega = 7.00;
+        break;
+
+        case "Laranjal": 
+            taxaEntrega = 10.00;
+        break;
+
+        default:
+            taxaEntrega = 8.00;
+        break;
+    }
+    alert(`Taxa de entrega para o bairro ${bairro} é de R$${taxaEntrega.toFixed(2)}`);
+</script> 
+</body>
+</html>
