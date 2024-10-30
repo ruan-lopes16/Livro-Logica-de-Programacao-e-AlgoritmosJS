@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Velocidade</title>
+    <style>
+        img{
+            float: left;
+            width: 300px;
+            height: 300px;
+            padding-right: 8px;
+        }
+        h1{
+            border-bottom-style: inset;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/radar.jpg" alt="radar">
+    <h1>Programa Radar Velocidade</h1>
+
+    <form>
+        <p>
+            Velocidade permitida(km/h):
+            <input type="number" id="inVelocidadePermitida" step="0.1" required>
+        </p>
+        <p>
+            Velocidade do condutor(km/h):
+            <input type="number" id="inVelocidadeCondutor" step="0.1" required>
+        </p>
+        <input type="submit" value="Verificar velocidade">
+    </form>
+
+    <h3></h3>
+
+<script src="scriptB.js"></script>
+</body>
+</html>
