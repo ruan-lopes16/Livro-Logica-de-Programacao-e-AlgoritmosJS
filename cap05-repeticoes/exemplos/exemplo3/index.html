@@ -1,0 +1,36 @@
+<!-- pares entre um numero e outro -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+</head>
+<body>
+
+    <script>
+        let num;            // declara a variavel num com let, pois ela pode ser alterada
+                            // e será acessada fora do bloco do..while
+        do{                 // cria laço de repetição (faça)
+            num = Number(prompt('Digite um número'));    // coleta o número atraves do prompt
+            if ( num == 0 || isNaN(num) ) {             // verifica se o valor digitado é 0 ou NaN(Not a Number - inválido)
+                alert('Digite um número válido!')
+            }
+
+        } while ( num == 0 || isNaN(num) );               // repete enquanto o valor digitado for 0 ou NaN
+
+        let pares = `Pares entre 1 e ${num}: `;            // declara a variavel pares com let, pois ela pode ser alterada
+        
+        for (let i = 2; i <= num; i += 2){
+            pares = pares + i + ', ';
+        }
+        //pares = pares + i + '.'; // por algum motivo nao funciona
+
+        alert(pares);
+        console.log(pares);
+
+    </script>
+
+</body>
+</html>
