@@ -9,6 +9,7 @@ frm.addEventListener( 'submit', (e) => {
 
     for ( let i = num; i >= 1; i-- ){
 
+        /* Funcional, mas não ideal
         if( i == 1 ){ // verifica se o ultimo numero da repetição é 0, se for, colocar o ponto final (.)
             resposta = resposta + i + '.';          // pego a resposta, concateno ela a ao numero q está em i (na repetição) e por fim o ponto
 
@@ -16,8 +17,11 @@ frm.addEventListener( 'submit', (e) => {
             resposta = resposta + i + ', ';
 
         }
+        */
         
+        resposta = resposta + i + ',';
     }
+    resposta = resposta + '1.'; // já adiciona o ultimo número e evita comparações
 
     resp.innerText = resposta;
     e.preventDefault();
