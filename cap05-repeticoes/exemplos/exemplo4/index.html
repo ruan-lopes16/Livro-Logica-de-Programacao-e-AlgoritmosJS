@@ -1,0 +1,43 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saindo de um laço</title>
+</head>
+<body>
+
+<script>
+
+    alert ( 'Digite 0 para sair' );
+
+    do { 
+        const num = Number ( prompt ( 'Número: ' ) );               // pegando numero
+
+        if ( num == 0 || isNaN( num ) ) {                           // se num = 0 ou inválido
+            const sair = confirm ( 'Confirma saída?' );             // solicita confirmação do usuário
+            if ( sair ) {
+                break;                                              // sai/para o programa
+            } /*else { 
+                continue;                                           // volta ao inicio do laço
+            }*/
+        }
+
+        if ( num % 2 == 0 ) {                                       // se for par
+            alert ( `O dobro de ${num} é: ${num * 2}` );            // mostra o dobro
+
+        } else {                                                    // se for impar
+            alert ( `O triplo de ${num} é: ${num * 3}`  );          // mostra o triplo
+
+        } 
+
+    } while ( true );                                               // enquanto verade (só sai do laço, pelo break)
+
+    alert ( 'Bye, bye...' );
+
+</script>
+    
+</body>
+</html>
